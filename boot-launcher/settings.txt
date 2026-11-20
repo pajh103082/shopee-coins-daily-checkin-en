@@ -1,0 +1,20 @@
+﻿# Settings for the startup launcher (lines starting with # are comments)
+
+# Which Chrome profile to open (the one with "Shopee Coins Daily Check-in" installed and logged in to Shopee).
+# Use the Gmail address, the name shown in Chrome's top-right corner, or the folder name (e.g. Default, Profile 1).
+# Not sure? Run 1_select_chrome_profile.bat and type the number - it is saved here automatically.
+account=
+
+# window: minimized = start minimized to the taskbar, normal = open a normal window
+window=minimized
+
+# Seconds to wait after sign-in before deciding (gives the network time to connect)
+delay_seconds=20
+
+# At startup, do not open Chrome if today's Shopee check-in is already done (yes / no)
+# To see what would happen right now: run 5_check_status.bat
+skip_if_done=yes
+
+# Usually not needed - only if Chrome cannot be found automatically
+# chrome_path=C:\Program Files\Google\Chrome\Application\chrome.exe
+# chrome_user_data=C:\Users\YourName\AppData\Local\Google\Chrome\User Data

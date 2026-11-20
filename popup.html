@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; width: 330px; margin: 12px; font-size: 13px; color: #222; }
+  h1 { font-size: 15px; margin: 0 0 8px; display: flex; align-items: center; gap: 6px; }
+  h1 img { width: 20px; height: 20px; }
+  #today { margin-bottom: 10px; }
+  button { width: 100%; padding: 6px; font-size: 13px; cursor: pointer; }
+  ul { list-style: none; padding: 0; margin: 10px 0 0; max-height: 260px; overflow-y: auto; }
+  li { border-top: 1px solid #ddd; padding: 5px 0; }
+  .t { color: #777; font-size: 12px; }
+  #settings { margin-top: 10px; padding-top: 8px; border-top: 1px solid #ddd; }
+  #settings label { display: block; margin-bottom: 6px; cursor: pointer; }
+  #googleEmail { width: 100%; box-sizing: border-box; padding: 4px 6px; font-size: 12px; }
+  #sponsor { margin-top: 12px; padding-top: 10px; border-top: 1px solid #ddd; text-align: center; }
+  #sponsor button { background: #ff5e5b; color: #fff; border: none; border-radius: 4px; }
+  #sponsor button:hover { background: #e54b48; }
+  #sponsor .note { color: #777; font-size: 12px; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <h1><img src="icons/icon32.png" alt="">Shopee Daily Check-in</h1>
+  <div id="today"></div>
+  <button id="run">Check in now</button>
+  <ul id="log"></ul>
+  <div id="settings">
+    <label><input type="checkbox" id="autoLogin"> Log back in with Google when logged out</label>
+    <input type="email" id="googleEmail" placeholder="Google account (only needed if you have several)">
+  </div>
+  <div id="sponsor">
+    <div class="note">Find it useful? You can buy the author a coffee</div>
+    <button id="sponsorBtn">☕ Support me on Ko-fi</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
